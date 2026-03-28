@@ -1,0 +1,59 @@
+baseURL = "https://blog.telogos.ai/"
+languageCode = "en-us"
+title = "Human-Curated, AI-Enabled"
+theme = "PaperMod"
+[pagination]
+pagerSize = 10
+
+[params]
+  author = "JD Longmire"
+  description = "A senior enterprise architect's perspective on AI maturation in the enterprise."
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  [params.homeInfoParams]
+    Title = "Human-Curated, AI-Enabled"
+    Content = """
+An enterprise architect's field notes on AI maturation — what it actually looks like when AI moves from assistant to infrastructure. Real architecture decisions, real tradeoffs, honest assessments.
+
+*By JD Longmire, Sr. Enterprise Architect*
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/jdlongmire"
+
+[menu]
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "categories"
+    name = "Topics"
+    url = "/categories/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+  [markup.goldmark.renderer]
+    unsafe = true
