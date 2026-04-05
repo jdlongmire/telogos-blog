@@ -1,0 +1,24 @@
+/* OAgents Blog — Custom overrides for PaperMod theme */
+
+/* Widen the content area and center it */
+:root {
+    --main-width: 860px;
+}
+
+/* Increase base font size for readability */
+body {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Scale post content font */
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Ensure post content paragraphs are comfortable to read */
+.post-content p,
+.post-content li {
+    line-height: 1.8;
+}
